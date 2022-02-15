@@ -4,6 +4,7 @@ h1 {
 }
 body {
   background-image: url("background.jpg");
+  font-family: 'Roboto Serif', sans-serif ;
 }
 #hero {
   width: 100%;
@@ -78,7 +79,7 @@ body {
   }
 }
 
-#hero .about-btn {
+.about-btn {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
   font-size: 14px;
@@ -95,8 +96,8 @@ body {
   border: 2px solid #fed136;
 }
 
-#hero .about-btn:hover {
-  background: #fed136;
+.about-btn:hover {
+  background: #fed136 !important;
   color: #fff;
 }
 
@@ -218,6 +219,15 @@ text-transform: uppercase;
   border-radius: 15px 15px 15px 15px;
 }
 
+.card-img-new {
+  display: block;
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  border-radius: 15px 15px 15px 15px;
+}
+
+
 
 
  .card:hover{
@@ -249,7 +259,7 @@ text-transform: uppercase;
    padding: 1.5rem;
    font-size: 14px;
    text-align: left;
-   color: #3363ff;
+   color: #21201e;
    background-color: #d8e0fd;
    border: none;
    border-radius: 0.4rem;
@@ -265,12 +275,12 @@ text-transform: uppercase;
 
  #compe.card-btn:hover,
  #compe.card-btn:active {
-   background-color: #c2cffc;
+   background-color: #fed136;
  }
 
  #compe.btn:hover,
  #compe.btn:active {
-   background-color: #c2cffc;
+   background-color: #fed136;
  }
 
  #compe .card-btn:hover span,
@@ -306,8 +316,8 @@ position: relative;
 }
 
 #events h1 {
-color: #626869;
-font-family: "Raleway", sans-serif;
+color: black;
+/* font-family: "Raleway", sans-serif; */
 font-size: 56px;
 font-weight: 600;
 text-transform: uppercase;
@@ -327,6 +337,7 @@ text-transform: uppercase;
   outline: none;
   background-color: #CACFD2;
   border-radius: 20px;
+  height: 20rem;
 
 
 }
@@ -360,7 +371,7 @@ text-transform: uppercase;
    font-size: 14px;
    letter-spacing: 0.1rem;
    line-height: 1.7;
-   color: #3d3d3d;
+   color: black;
    margin-bottom: 2.5rem;
  }
 
@@ -370,7 +381,7 @@ text-transform: uppercase;
    padding: 1.5rem;
    font-size: 14px;
    text-align: left;
-   color: #3363ff;
+   color: #21201e;
    background-color: #d8e0fd;
    border: none;
    border-radius: 0.4rem;
@@ -408,3 +419,52 @@ text-transform: uppercase;
 		-webkit-clip-path: inset(0% 0% 83% 0%);
 	}
 }
+
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  height: 20rem;
+  /* perspective: 1000px; Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  height: 20rem;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  height: 20rem;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  height: 20rem;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  transform: rotateY(180deg);
+  height: 20rem;
+}
+
