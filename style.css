@@ -57,6 +57,8 @@ body {
   text-transform: uppercase;
 }
 
+
+
 #hero h1 span {
   color: #f82249;
 }
@@ -320,8 +322,16 @@ color: black;
 /* font-family: "Raleway", sans-serif; */
 font-size: 56px;
 font-weight: 600;
-text-transform: uppercase;
+
 }
+
+#whyus h1 {
+  color: black;
+  /* font-family: "Raleway", sans-serif; */
+  font-size: 56px;
+  font-weight: 600;
+  
+  }
 
 #events html {
   box-sizing: content-box;
